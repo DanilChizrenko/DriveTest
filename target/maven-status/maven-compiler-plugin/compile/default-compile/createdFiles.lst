@@ -1,0 +1,7 @@
+com\exrule\demotest\model\Car.class
+com\exrule\demotest\service\DriveService.class
+com\exrule\demotest\DemotestApplication.class
+com\exrule\demotest\controller\dto\DriveCreateDTO.class
+com\exrule\demotest\controller\DriveController.class
+com\exrule\demotest\repository\DriveRepository.class
+com\exrule\demotest\service\DriveServiceImpl.class

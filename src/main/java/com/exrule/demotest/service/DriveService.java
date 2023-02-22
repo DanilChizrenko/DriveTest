@@ -1,8 +1,8 @@
 package com.exrule.demotest.service;
 
-import com.exrule.demotest.model.CarName;
+import com.exrule.demotest.model.Car;
 
 public interface DriveService {
-    CarName getbyId(Long id) throws Exception;
-    Long createCarName();
+    Car getbyId(Long id) throws Exception;
+    Long createCarName(String name, Integer year);
 }
