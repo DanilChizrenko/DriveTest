@@ -4,6 +4,7 @@ import com.exrule.demotest.controller.dto.DriveCreateDTO;
 import com.exrule.demotest.model.Car;
 import com.exrule.demotest.service.DriveService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -11,13 +12,14 @@ import org.springframework.web.bind.annotation.*;
 public class DriveController {
     private final DriveService driveService;
 
-    @GetMapping("/api/carname/{id}")
-    public Car getbyId(@PathVariable Long id) throws Exception {
-        return driveService.getbyId(id);
+    @PostMapping("/api/carname")
+    public ResponseEntity<?> createCarName(@RequestBody DriveCreateDTO driveCreateDTO){
+        String name = driveService.createCarName(driveCreateDTO).getName();
+        return ResponseEntity.ok().body("Car create - " + name);
     }
 
-    @PostMapping("/api/carname")
-    public Long createCarName(@RequestBody DriveCreateDTO createDTO){
-        return driveService.createCarName(createDTO.getName(), createDTO.getYear());
+    @GetMapping("/api/carname/{id}")
+    public Car getById(@PathVariable Long id) throws Exception {
+        return driveService.getById(id);
     }
 }

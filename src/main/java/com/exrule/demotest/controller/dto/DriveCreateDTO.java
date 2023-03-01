@@ -6,4 +6,5 @@ import lombok.Getter;
 public class DriveCreateDTO {
     private String name;
     private Integer year;
+    private Long manufacturerId;
 }
