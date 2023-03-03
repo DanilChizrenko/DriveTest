@@ -1,1 +1,3 @@
 com\exrule\demotest\DemotestApplicationTests.class
+com\exrule\demotest\service\ManufServiceTest.class
+com\exrule\demotest\service\DriveServiceTest.class

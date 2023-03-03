@@ -1,7 +1,13 @@
-com\exrule\demotest\model\Car.class
 com\exrule\demotest\service\DriveService.class
 com\exrule\demotest\DemotestApplication.class
-com\exrule\demotest\controller\dto\DriveCreateDTO.class
-com\exrule\demotest\controller\DriveController.class
 com\exrule\demotest\repository\DriveRepository.class
+com\exrule\demotest\controller\ManufController.class
+com\exrule\demotest\model\Car.class
+com\exrule\demotest\controller\dto\ManufCreateDTO.class
+com\exrule\demotest\service\ManufService.class
+com\exrule\demotest\controller\dto\DriveCreateDTO.class
+com\exrule\demotest\repository\ManufRepository.class
+com\exrule\demotest\controller\DriveController.class
+com\exrule\demotest\service\ManufServiceImpl.class
 com\exrule\demotest\service\DriveServiceImpl.class
+com\exrule\demotest\model\Manufacturer.class
