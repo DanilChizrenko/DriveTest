@@ -26,7 +26,7 @@ public class DriveServiceTest {
 
     @Test
     @DisplayName("корректно возвращать модель и год машины")
-    void createDriveTest(){
+    void createDriveTest() throws Exception {
         Manufacturer manufacturer = new Manufacturer();
         manufacturer.setId(1L);
         manufacturer.setManufName("BMW");

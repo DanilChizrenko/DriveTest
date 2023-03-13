@@ -12,10 +12,21 @@ import org.springframework.web.bind.annotation.*;
 public class DriveController {
     private final DriveService driveService;
 
-    @PostMapping("/api/carname")
-    public ResponseEntity<?> createCarName(@RequestBody DriveCreateDTO driveCreateDTO){
+    @PostMapping("/api/carname/create")
+    public ResponseEntity<?> createCarName(@RequestBody DriveCreateDTO driveCreateDTO) throws Exception {
         String name = driveService.createCarName(driveCreateDTO).getName();
         return ResponseEntity.ok().body("Car create - " + name);
+    }
+
+    @PutMapping("/api/carname/update/{id}")
+    public Car updateCarName(@PathVariable Long id, @RequestBody DriveCreateDTO driveCreateDTO) throws Exception{
+        return driveService.updateCarName(id, driveCreateDTO);
+    }
+
+    @DeleteMapping("api/carname/delete/{id}")
+    public ResponseEntity<?> deleteCarName(Long id){
+        driveService.deleteCarName(id);
+        return ResponseEntity.ok().body("Car del");
     }
 
     @GetMapping("/api/carname/{id}")

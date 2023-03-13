@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class ManufServiceImpl implements ManufService{
+public class ManufServiceImpl implements ManufService {
     private final ManufRepository manufRepository;
 
     @Override
-    public Manufacturer create(ManufCreateDTO manufCreateDTO){
+    public Manufacturer create(ManufCreateDTO manufCreateDTO) {
         Manufacturer manufacturer = new Manufacturer();
         manufacturer.setManufName(manufCreateDTO.getName());
 
@@ -20,7 +20,23 @@ public class ManufServiceImpl implements ManufService{
     }
 
     @Override
-    public Manufacturer getById(Long id){
+    public Manufacturer update(Long id, ManufCreateDTO manufCreateDTO) {
+        Manufacturer manufacturer = manufRepository.findById(id).orElseThrow();
+        if (id != null) {
+            manufacturer.setManufName(manufCreateDTO.getName());
+        }
+        return manufRepository.save(manufacturer);
+    }
+
+    @Override
+    public void delete(Long id) {
+        manufRepository.deleteById(id);
+    }
+
+
+    @Override
+    public Manufacturer getById(Long id) {
         return manufRepository.findById(id).orElseThrow();
     }
+
 }
