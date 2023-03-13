@@ -1,0 +1,40 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,7 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="bdc99274-30d1-41da-8ee2-a425a9621546" name="Changes" comment="test1" />
++    <list default="true" id="bdc99274-30d1-41da-8ee2-a425a9621546" name="Changes" comment="test1">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -85,7 +87,10 @@
+       <workItem from="1676468058166" duration="7575000" />
+       <workItem from="1676475971214" duration="19000" />
+       <workItem from="1677068830511" duration="10649000" />
+-      <workItem from="1677675293228" duration="8570000" />
++      <workItem from="1677675293228" duration="8914000" />
++      <workItem from="1678712078007" duration="140000" />
++      <workItem from="1678712234773" duration="328000" />
++      <workItem from="1678712590787" duration="1202000" />
+     </task>
+     <servers />
+   </component>
+@@ -100,7 +105,7 @@
+             <State>
+               <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                 <map>
+-                  <entry key="Show.Git.Branches" value="true" />
++                  <entry key="Show.Git.Branches" value="false" />
+                 </map>
+               </option>
+               <option name="BEK_SORT_TYPE" value="1" />
