@@ -33,4 +33,14 @@ public class ManufController {
     public Manufacturer getById(@PathVariable Long id) throws Exception{
         return manufService.getById(id);
     }
+
+    @GetMapping("api/public")
+    public String publicApi(){
+        return "FROM PUBLIC";
+    }
+
+    @GetMapping("api/private")
+    public String privateApi(){
+        return "FROM PRIVATE";
+    }
 }

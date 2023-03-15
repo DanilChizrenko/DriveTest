@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdc99274-30d1-41da-8ee2-a425a9621546" name="Changes" comment="test1">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_19_01_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_19_01__Changes_.xml" beforeDir="false" />
+    <list default="true" id="bdc99274-30d1-41da-8ee2-a425a9621546" name="Changes" comment="add put and del method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/configuration/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/DriveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/DriveController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/ManufController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/ManufController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/DriveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/DriveService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/DriveServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/DriveServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/ManufService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/ManufService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/ManufServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/ManufServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exrule/demotest/service/DriveServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exrule/demotest/service/DriveServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-03-03T21-08-43_106-jvmRun1.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-03-03T21-08-43_106.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,27 +52,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/НикитинН/Documents/demotest",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "spring",
-    "spring.configuration.checksum": "5c4896c0c3fefb8ef0b326e436790906"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/НикитинН/Documents/demotest&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5c4896c0c3fefb8ef0b326e436790906&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.DemotestApplication">
     <configuration name="DemotestApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demotest" />
@@ -163,8 +152,17 @@
       <workItem from="1676468058166" duration="7575000" />
       <workItem from="1676475971214" duration="19000" />
       <workItem from="1677068830511" duration="7472000" />
-      <workItem from="1678714467021" duration="6891000" />
+      <workItem from="1678714467021" duration="7180000" />
+      <workItem from="1678884886385" duration="8520000" />
     </task>
+    <task id="LOCAL-00001" summary="add put and del method">
+      <created>1678721708340</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678721708340</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +196,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add put and del method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add put and del method" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
