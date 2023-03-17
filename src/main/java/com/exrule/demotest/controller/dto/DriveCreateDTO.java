@@ -9,4 +9,5 @@ public class DriveCreateDTO {
     private String name;
     private Integer year;
     private Long manufacturerId;
+    private Integer ratingValue;
 }

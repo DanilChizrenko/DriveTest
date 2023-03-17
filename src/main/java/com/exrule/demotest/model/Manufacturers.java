@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity(name = "manufacturers")
-public class Manufacturer {
+public class Manufacturers {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

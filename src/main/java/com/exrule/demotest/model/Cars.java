@@ -11,7 +11,7 @@ import java.time.ZonedDateTime;
 @Getter
 @Setter
 @Entity(name = "cars")
-public class Car {
+public class Cars {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,7 +19,9 @@ public class Car {
     private Integer carIssue;
     @ManyToOne
     @JoinColumn(name = "manufacturer_id")
-    private Manufacturer manufacturer;
+    private Manufacturers manufacturers;
+    @OneToOne(mappedBy = "car", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Ratings ratings;
     @CreationTimestamp
     private ZonedDateTime createDate;
     @UpdateTimestamp

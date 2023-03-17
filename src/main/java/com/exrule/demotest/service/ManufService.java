@@ -1,11 +1,11 @@
 package com.exrule.demotest.service;
 
 import com.exrule.demotest.controller.dto.ManufCreateDTO;
-import com.exrule.demotest.model.Manufacturer;
+import com.exrule.demotest.model.Manufacturers;
 
 public interface ManufService {
-    Manufacturer getById(Long id) throws Exception;
-    Manufacturer create(ManufCreateDTO manufCreateDTO);
-    Manufacturer update(Long id, ManufCreateDTO manufCreateDTO);
+    Manufacturers getById(Long id) throws Exception;
+    Manufacturers create(ManufCreateDTO manufCreateDTO);
+    Manufacturers update(Long id, ManufCreateDTO manufCreateDTO);
     void delete(Long id);
 }

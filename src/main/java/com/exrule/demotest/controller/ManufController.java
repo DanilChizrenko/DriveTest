@@ -1,7 +1,7 @@
 package com.exrule.demotest.controller;
 
 import com.exrule.demotest.controller.dto.ManufCreateDTO;
-import com.exrule.demotest.model.Manufacturer;
+import com.exrule.demotest.model.Manufacturers;
 import com.exrule.demotest.service.ManufService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,7 @@ public class ManufController {
     }
 
     @PutMapping("api/manufacturer/update/{id}")
-    public Manufacturer update(@PathVariable Long id, @RequestBody ManufCreateDTO manufCreateDTO){
+    public Manufacturers update(@PathVariable Long id, @RequestBody ManufCreateDTO manufCreateDTO){
         return manufService.update(id,manufCreateDTO);
     }
 
@@ -30,7 +30,7 @@ public class ManufController {
     }
 
     @GetMapping("api/manufacturer/{id}")
-    public Manufacturer getById(@PathVariable Long id) throws Exception{
+    public Manufacturers getById(@PathVariable Long id) throws Exception{
         return manufService.getById(id);
     }
 
