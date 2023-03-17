@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdc99274-30d1-41da-8ee2-a425a9621546" name="Changes" comment="add test for car and manuf">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/RatingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/dto/RatingCreateDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/Ratings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/RatingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/DriveServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/RatingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/RatingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_03_2023_19_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_03_2023_19_23__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/DriveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/DriveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/ManufController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/ManufController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/dto/DriveCreateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/dto/DriveCreateDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/Cars.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/Manufacturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/Manufacturers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/DriveRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/DriveRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/ManufRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/ManufRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/DriveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/DriveService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/DriveServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/ManufService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/ManufService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/ManufServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/ManufServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exrule/demotest/service/DriveServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exrule/demotest/service/DriveServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/exrule/demotest/service/ManufServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exrule/demotest/service/ManufServiceTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="bdc99274-30d1-41da-8ee2-a425a9621546" name="Changes" comment="add rating model (not configure yet)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,6 +139,14 @@
       <workItem from="1676475971214" duration="19000" />
       <workItem from="1677068830511" duration="7472000" />
     </task>
+    <task id="LOCAL-00001" summary="add rating model (not configure yet)">
+      <created>1679067104954</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679067104954</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +180,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add rating model (not configure yet)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add rating model (not configure yet)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
