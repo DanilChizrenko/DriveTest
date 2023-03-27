@@ -1,7 +1,7 @@
 package com.exrule.demotest.service.Impl;
 
 import com.exrule.demotest.controller.dto.ManufCreateDTO;
-import com.exrule.demotest.model.Manufacturers;
+import com.exrule.demotest.model.Manufacturer;
 import com.exrule.demotest.repository.ManufRepository;
 import com.exrule.demotest.service.ManufService;
 import lombok.RequiredArgsConstructor;
@@ -13,20 +13,20 @@ public class ManufServiceImpl implements ManufService {
     private final ManufRepository manufRepository;
 
     @Override
-    public Manufacturers create(ManufCreateDTO manufCreateDTO) {
-        Manufacturers manufacturers = new Manufacturers();
-        manufacturers.setManufName(manufCreateDTO.getName());
+    public Manufacturer create(ManufCreateDTO manufCreateDTO) {
+        Manufacturer manufacturer = new Manufacturer();
+        manufacturer.setManufName(manufCreateDTO.getName());
 
-        return manufRepository.save(manufacturers);
+        return manufRepository.save(manufacturer);
     }
 
     @Override
-    public Manufacturers update(Long id, ManufCreateDTO manufCreateDTO) {
-        Manufacturers manufacturers = manufRepository.findById(id).orElseThrow();
+    public Manufacturer update(Long id, ManufCreateDTO manufCreateDTO) {
+        Manufacturer manufacturer = manufRepository.findById(id).orElseThrow();
         if (id != null) {
-            manufacturers.setManufName(manufCreateDTO.getName());
+            manufacturer.setManufName(manufCreateDTO.getName());
         }
-        return manufRepository.save(manufacturers);
+        return manufRepository.save(manufacturer);
     }
 
     @Override
@@ -36,7 +36,7 @@ public class ManufServiceImpl implements ManufService {
 
 
     @Override
-    public Manufacturers getById(Long id) {
+    public Manufacturer getById(Long id) {
         return manufRepository.findById(id).orElseThrow();
     }
 

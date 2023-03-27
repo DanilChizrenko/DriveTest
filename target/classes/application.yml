@@ -18,3 +18,8 @@ spring:
       ddl-auto: create-drop
     properties:
       hibernate.format_sql: true
+
+  security:
+    user:
+      name: d4i
+      password: 111

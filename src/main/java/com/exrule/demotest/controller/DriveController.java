@@ -1,7 +1,7 @@
 package com.exrule.demotest.controller;
 
 import com.exrule.demotest.controller.dto.DriveCreateDTO;
-import com.exrule.demotest.model.Cars;
+import com.exrule.demotest.model.Car;
 import com.exrule.demotest.service.DriveService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,7 @@ public class DriveController {
     }
 
     @PutMapping("/api/carname/update/{id}")
-    public Cars updateCarName(@PathVariable Long id, @RequestBody DriveCreateDTO driveCreateDTO) throws Exception{
+    public Car updateCarName(@PathVariable Long id, @RequestBody DriveCreateDTO driveCreateDTO) throws Exception{
         return driveService.updateCarName(id, driveCreateDTO);
     }
 
@@ -30,7 +30,7 @@ public class DriveController {
     }
 
     @GetMapping("/api/carname/{id}")
-    public Cars getById(@PathVariable Long id) throws Exception {
+    public Car getById(@PathVariable Long id) throws Exception {
         return driveService.getById(id);
     }
 }

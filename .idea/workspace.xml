@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdc99274-30d1-41da-8ee2-a425a9621546" name="Changes" comment="add rating model (not configure yet)" />
+    <list default="true" id="bdc99274-30d1-41da-8ee2-a425a9621546" name="Changes" comment="add spring security">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_03_2023_18_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_03_2023_18_59__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/DriveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/DriveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/ManufController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/ManufController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/RatingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/RatingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/dto/RatingCreateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/dto/RatingCreateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/Cars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/Manufacturers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/Manufacturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/Ratings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/model/Rating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/DriveRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/DriveRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/ManufRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/ManufRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/RatingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/RatingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/DriveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/DriveService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/DriveServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/DriveServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/ManufServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/ManufServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/RatingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/RatingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/ManufService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/ManufService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/RatingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/RatingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exrule/demotest/service/DriveServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exrule/demotest/service/DriveServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exrule/demotest/service/ManufServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exrule/demotest/service/ManufServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exrule/demotest/controller/DriveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exrule/demotest/controller/DriveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/exrule/demotest/controller/ManufController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exrule/demotest/controller/ManufController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/exrule/demotest/service/DriveServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/exrule/demotest/service/DriveServiceTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +59,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -59,11 +88,11 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;5c4896c0c3fefb8ef0b326e436790906&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.DemotestApplicationTests">
+  <component name="RunManager" selected="Spring Boot.DemotestApplication">
     <configuration name="DemotestApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demotest" />
       <extension name="coverage">
@@ -83,7 +112,7 @@
       <module name="demotest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exrule.demotest.service.Impl.*" />
+          <option name="PATTERN" value="com.exrule.demotest.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,7 +127,7 @@
       <module name="demotest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exrule.demotest.service.Impl.*" />
+          <option name="PATTERN" value="com.exrule.demotest.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,6 +154,10 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="showImplicitBeans" value="false" />
+    <option name="showInfrastructureBeans" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\НикитинН\AppData\Roaming\Subversion</configuration>
   </component>
@@ -138,13 +171,15 @@
       <workItem from="1676468058166" duration="7575000" />
       <workItem from="1676475971214" duration="19000" />
       <workItem from="1677068830511" duration="7472000" />
+      <workItem from="1678714467021" duration="7180000" />
+      <workItem from="1678884886385" duration="8520000" />
     </task>
-    <task id="LOCAL-00001" summary="add rating model (not configure yet)">
-      <created>1679067104954</created>
+    <task id="LOCAL-00001" summary="add put and del method">
+      <created>1678721708340</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1679067104954</updated>
+      <updated>1678721708340</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -160,7 +195,7 @@
             <State>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="Show.Git.Branches" value="false" />
+                  <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
               <option name="BEK_SORT_TYPE" value="1" />
@@ -182,8 +217,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add rating model (not configure yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add rating model (not configure yet)" />
+    <MESSAGE value="add put and del method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add put and del method" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -6,5 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class RatingCreateDTO {
-    Integer ratingValue;
+    private Double ratingValue;
+    private Long carId;
 }

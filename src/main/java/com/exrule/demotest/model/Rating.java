@@ -6,10 +6,13 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "manufacturers")
-public class Manufacturers {
+@Entity(name = "ratings")
+public class Rating {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String manufName;
+    private Double ratingValue;
+    @ManyToOne
+    @JoinColumn(name = "car_id")
+    private Car car;
 }
