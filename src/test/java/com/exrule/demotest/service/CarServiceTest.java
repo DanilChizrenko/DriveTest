@@ -1,9 +1,9 @@
 package com.exrule.demotest.service;
 
-import com.exrule.demotest.controller.dto.DriveCreateDTO;
+import com.exrule.demotest.controller.dto.CarDTO;
 import com.exrule.demotest.model.Car;
 import com.exrule.demotest.model.Manufacturer;
-import com.exrule.demotest.repository.DriveRepository;
+import com.exrule.demotest.repository.CarRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -14,13 +14,13 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 
 @SpringBootTest
 @DisplayName("Должно ")
-public class DriveServiceTest {
+public class CarServiceTest {
     @Autowired
-    private DriveService driveService;
+    private CarService carService;
     @MockBean
     private ManufService manufService;
     @MockBean
-    private DriveRepository driveRepository;
+    private CarRepository carRepository;
 
     @Test
     @DisplayName("корректно возвращать модель и год машины")
@@ -29,10 +29,10 @@ public class DriveServiceTest {
         manufacturer.setId(1L);
         manufacturer.setManufName("BMW");
 
-        DriveCreateDTO driveCreateDTO = new DriveCreateDTO();
-        driveCreateDTO.setName("530");
-        driveCreateDTO.setYear(2017);
-        driveCreateDTO.setManufacturerId(manufacturer.getId());
+        CarDTO carDTO = new CarDTO();
+        carDTO.setName("530");
+        carDTO.setYear(2017);
+        carDTO.setManufacturerId(manufacturer.getId());
 
         Car car = new Car();
         car.setManufacturer(manufacturer);
@@ -41,9 +41,9 @@ public class DriveServiceTest {
         car.setId(1L);
 
         Mockito.when(manufService.getById(2L)).thenReturn(manufacturer);
-        Mockito.when(driveRepository.save(Mockito.any(Car.class))).thenReturn(car);
+        Mockito.when(carRepository.save(Mockito.any(Car.class))).thenReturn(car);
 
-        var res = driveService.createCarName(driveCreateDTO);
+        var res = carService.createCarName(carDTO);
 
         Assertions.assertEquals(res.getName(), "530");
         Assertions.assertEquals(res.getCarIssue(), 2017);

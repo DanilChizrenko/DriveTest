@@ -5,9 +5,9 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class DriveCreateDTO {
+public class CarDTO {
     private String name;
     private Integer year;
     private Long manufacturerId;
-    private Integer ratingValue;
+    private Double ratingValue;
 }

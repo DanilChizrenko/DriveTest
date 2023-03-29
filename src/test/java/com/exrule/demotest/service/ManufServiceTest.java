@@ -1,6 +1,6 @@
 package com.exrule.demotest.service;
 
-import com.exrule.demotest.controller.dto.ManufCreateDTO;
+import com.exrule.demotest.controller.dto.ManufDTO;
 import com.exrule.demotest.model.Manufacturer;
 import com.exrule.demotest.repository.ManufRepository;
 import org.junit.jupiter.api.Assertions;
@@ -22,8 +22,8 @@ public class ManufServiceTest {
     @Test
     @DisplayName("вернуть навание произвоодителя")
     void createManufacturerTets(){
-        ManufCreateDTO manufCreateDTO = new ManufCreateDTO();
-        manufCreateDTO.setName("BMW");
+        ManufDTO manufDTO = new ManufDTO();
+        manufDTO.setName("BMW");
 
         Manufacturer manufacturer = new Manufacturer();
         manufacturer.setManufName("BMW");
@@ -31,7 +31,7 @@ public class ManufServiceTest {
 
         Mockito.when(manufRepository.save(Mockito.any(Manufacturer.class))).thenReturn(manufacturer);
 
-        var res = manufService.create(manufCreateDTO);
+        var res = manufService.create(manufDTO);
 
         Assertions.assertEquals(res.getManufName(), "BMW");
     }

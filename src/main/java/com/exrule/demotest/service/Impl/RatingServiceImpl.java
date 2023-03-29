@@ -1,8 +1,9 @@
 package com.exrule.demotest.service.Impl;
 
-import com.exrule.demotest.controller.dto.RatingCreateDTO;
+import com.exrule.demotest.controller.dto.RatingDTO;
 import com.exrule.demotest.model.Rating;
 import com.exrule.demotest.repository.RatingRepository;
+import com.exrule.demotest.service.CarService;
 import com.exrule.demotest.service.RatingService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -14,10 +15,13 @@ import java.util.List;
 public class RatingServiceImpl implements RatingService {
     private final RatingRepository ratingRepository;
 
+    private final CarService carService;
+
     @Override
-    public Rating addRating(RatingCreateDTO ratingCreateDTO) throws Exception {
+    public Rating addRating(RatingDTO ratingDTO) throws Exception {
         Rating rating = new Rating();
-        rating.setRatingValue(ratingCreateDTO.getRatingValue());
+        rating.setRatingValue(ratingDTO.getRatingValue());
+        rating.setCar(carService.getById(ratingDTO.getCarId()));
         return ratingRepository.save(rating);
     }
 

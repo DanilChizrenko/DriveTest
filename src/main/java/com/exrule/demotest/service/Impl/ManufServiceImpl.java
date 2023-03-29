@@ -1,6 +1,6 @@
 package com.exrule.demotest.service.Impl;
 
-import com.exrule.demotest.controller.dto.ManufCreateDTO;
+import com.exrule.demotest.controller.dto.ManufDTO;
 import com.exrule.demotest.model.Manufacturer;
 import com.exrule.demotest.repository.ManufRepository;
 import com.exrule.demotest.service.ManufService;
@@ -13,18 +13,18 @@ public class ManufServiceImpl implements ManufService {
     private final ManufRepository manufRepository;
 
     @Override
-    public Manufacturer create(ManufCreateDTO manufCreateDTO) {
+    public Manufacturer create(ManufDTO manufDTO) {
         Manufacturer manufacturer = new Manufacturer();
-        manufacturer.setManufName(manufCreateDTO.getName());
+        manufacturer.setManufName(manufDTO.getName());
 
         return manufRepository.save(manufacturer);
     }
 
     @Override
-    public Manufacturer update(Long id, ManufCreateDTO manufCreateDTO) {
+    public Manufacturer update(Long id, ManufDTO manufDTO) {
         Manufacturer manufacturer = manufRepository.findById(id).orElseThrow();
         if (id != null) {
-            manufacturer.setManufName(manufCreateDTO.getName());
+            manufacturer.setManufName(manufDTO.getName());
         }
         return manufRepository.save(manufacturer);
     }
