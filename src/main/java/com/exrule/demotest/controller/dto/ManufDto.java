@@ -5,9 +5,6 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class CarDTO {
+public class ManufDto {
     private String name;
-    private Integer year;
-    private Long manufacturerId;
-    private Double ratingValue;
 }

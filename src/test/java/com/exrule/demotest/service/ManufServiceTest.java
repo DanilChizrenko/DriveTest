@@ -1,6 +1,6 @@
 package com.exrule.demotest.service;
 
-import com.exrule.demotest.controller.dto.ManufDTO;
+import com.exrule.demotest.controller.dto.ManufDto;
 import com.exrule.demotest.model.Manufacturer;
 import com.exrule.demotest.repository.ManufRepository;
 import org.junit.jupiter.api.Assertions;
@@ -22,7 +22,7 @@ public class ManufServiceTest {
     @Test
     @DisplayName("вернуть навание произвоодителя")
     void createManufacturerTets(){
-        ManufDTO manufDTO = new ManufDTO();
+        ManufDto manufDTO = new ManufDto();
         manufDTO.setName("BMW");
 
         Manufacturer manufacturer = new Manufacturer();

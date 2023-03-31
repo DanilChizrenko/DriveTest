@@ -1,6 +1,6 @@
 package com.exrule.demotest.controller;
 
-import com.exrule.demotest.controller.dto.UserDTO;
+import com.exrule.demotest.controller.dto.UserDto;
 import com.exrule.demotest.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,7 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping("/registration")
-    public ResponseEntity<?> registration(@RequestBody @Validated UserDTO dto) {
+    public ResponseEntity<?> registration(@RequestBody @Validated UserDto dto) {
         if(userService.findByUsername(dto.getUsername()).isPresent()) {
             return ResponseEntity.badRequest().body("User already exists");
         }
@@ -25,7 +25,7 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<?> login(@RequestBody UserDTO dto) {
-        return ResponseEntity.ok(userService.login(dto));
+    public ResponseEntity<?> login(@RequestBody UserDto dto) {
+        return userService.login(dto);
     }
 }

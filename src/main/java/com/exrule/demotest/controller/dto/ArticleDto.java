@@ -5,7 +5,8 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class RatingDTO {
-    private Double ratingValue;
-    private Long carId;
+public class ArticleDto {
+    private String title;
+    private String content;
+    private String author;
 }

@@ -1,6 +1,6 @@
 package com.exrule.demotest.service.Impl;
 
-import com.exrule.demotest.controller.dto.CarDTO;
+import com.exrule.demotest.controller.dto.CarDto;
 import com.exrule.demotest.model.Car;
 import com.exrule.demotest.repository.CarRepository;
 import com.exrule.demotest.service.CarService;
@@ -15,7 +15,7 @@ public class CarServiceImpl implements CarService {
     private final ManufService manufService;
 
     @Override
-    public Car createCarName(CarDTO carDTO) throws Exception {
+    public Car createCarName(CarDto carDTO) throws Exception {
         Car car = new Car();
         car.setName(carDTO.getName());
         car.setCarIssue(carDTO.getYear());
@@ -24,7 +24,7 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public Car updateCarName(Long id, CarDTO carDTO) throws Exception {
+    public Car updateCarName(Long id, CarDto carDTO) throws Exception {
         Car car = carRepository.findById(id).orElseThrow();
         if (id != null) {
             car.setName(carDTO.getName());

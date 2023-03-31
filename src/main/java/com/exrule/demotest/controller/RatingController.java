@@ -1,6 +1,6 @@
 package com.exrule.demotest.controller;
 
-import com.exrule.demotest.controller.dto.RatingDTO;
+import com.exrule.demotest.controller.dto.RatingDto;
 import com.exrule.demotest.model.Rating;
 import com.exrule.demotest.service.RatingService;
 import lombok.RequiredArgsConstructor;
@@ -15,7 +15,7 @@ public class RatingController {
     private final RatingService ratingService;
 
     @PostMapping("api/rating/addrate")
-    public ResponseEntity<?> addRating(@RequestBody RatingDTO ratingDTO) throws Exception {
+    public ResponseEntity<?> addRating(@RequestBody RatingDto ratingDTO) throws Exception {
         Double value = ratingService.addRating(ratingDTO).getRatingValue();
         return ResponseEntity.ok().body("Rating is add - " + value);
     }

@@ -1,12 +1,13 @@
 package com.exrule.demotest.service.Impl;
 
 import com.exrule.demotest.configuration.JwtUtils;
-import com.exrule.demotest.controller.dto.UserDTO;
+import com.exrule.demotest.controller.dto.UserDto;
 import com.exrule.demotest.model.User;
 import com.exrule.demotest.repository.RoleRepository;
 import com.exrule.demotest.repository.UserRepository;
 import com.exrule.demotest.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -27,7 +28,7 @@ public class UserServiceImpl implements UserService {
     private final JwtUtils jwtUtils;
 
     @Override
-    public User registration(UserDTO dto) {
+    public User registration(UserDto dto) {
         User user = new User();
         user.setUsername(dto.getUsername());
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
@@ -36,7 +37,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String login(UserDTO dto) {
+    public ResponseEntity<?> login(UserDto dto) {
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(dto.getUsername(), dto.getPassword())
         );
@@ -45,10 +46,9 @@ public class UserServiceImpl implements UserService {
 
         if(userDetails != null) {
             String token = jwtUtils.generateToken(userDetails);
-            return token;
+            return ResponseEntity.ok("token created: " + token);
         }
-
-        return "not auth";
+        return ResponseEntity.badRequest().body("Something wrong with authentication");
     }
 
     @Override
