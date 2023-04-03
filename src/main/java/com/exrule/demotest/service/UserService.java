@@ -1,12 +1,13 @@
 package com.exrule.demotest.service;
 
-import com.exrule.demotest.controller.dto.UserDTO;
+import com.exrule.demotest.controller.dto.UserDto;
 import com.exrule.demotest.model.User;
+import org.springframework.http.ResponseEntity;
 
 import java.util.Optional;
 
 public interface UserService {
-    User registration(UserDTO dto);
+    User registration(UserDto dto);
     Optional<User> findByUsername(String username);
-    String login(UserDTO dto);
+    ResponseEntity<?> login(UserDto dto);
 }

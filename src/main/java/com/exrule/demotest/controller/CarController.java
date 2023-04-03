@@ -1,6 +1,6 @@
 package com.exrule.demotest.controller;
 
-import com.exrule.demotest.controller.dto.CarDTO;
+import com.exrule.demotest.controller.dto.CarDto;
 import com.exrule.demotest.model.Car;
 import com.exrule.demotest.service.CarService;
 import lombok.RequiredArgsConstructor;
@@ -13,13 +13,13 @@ public class CarController {
     private final CarService carService;
 
     @PostMapping("/api/carname/create")
-    public ResponseEntity<?> createCarName(@RequestBody CarDTO carDTO) throws Exception {
+    public ResponseEntity<?> createCarName(@RequestBody CarDto carDTO) throws Exception {
         String name = carService.createCarName(carDTO).getName();
         return ResponseEntity.ok().body("Car create - " + name);
     }
 
     @PutMapping("/api/carname/update/{id}")
-    public Car updateCarName(@PathVariable Long id, @RequestBody CarDTO carDTO) throws Exception{
+    public Car updateCarName(@PathVariable Long id, @RequestBody CarDto carDTO) throws Exception{
         return carService.updateCarName(id, carDTO);
     }
 

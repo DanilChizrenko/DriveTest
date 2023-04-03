@@ -1,6 +1,6 @@
 package com.exrule.demotest.service.Impl;
 
-import com.exrule.demotest.controller.dto.RatingDTO;
+import com.exrule.demotest.controller.dto.RatingDto;
 import com.exrule.demotest.model.Rating;
 import com.exrule.demotest.repository.RatingRepository;
 import com.exrule.demotest.service.CarService;
@@ -18,7 +18,7 @@ public class RatingServiceImpl implements RatingService {
     private final CarService carService;
 
     @Override
-    public Rating addRating(RatingDTO ratingDTO) throws Exception {
+    public Rating addRating(RatingDto ratingDTO) throws Exception {
         Rating rating = new Rating();
         rating.setRatingValue(ratingDTO.getRatingValue());
         rating.setCar(carService.getById(ratingDTO.getCarId()));

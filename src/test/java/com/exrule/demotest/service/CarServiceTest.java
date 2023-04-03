@@ -1,6 +1,6 @@
 package com.exrule.demotest.service;
 
-import com.exrule.demotest.controller.dto.CarDTO;
+import com.exrule.demotest.controller.dto.CarDto;
 import com.exrule.demotest.model.Car;
 import com.exrule.demotest.model.Manufacturer;
 import com.exrule.demotest.repository.CarRepository;
@@ -29,7 +29,7 @@ public class CarServiceTest {
         manufacturer.setId(1L);
         manufacturer.setManufName("BMW");
 
-        CarDTO carDTO = new CarDTO();
+        CarDto carDTO = new CarDto();
         carDTO.setName("530");
         carDTO.setYear(2017);
         carDTO.setManufacturerId(manufacturer.getId());
