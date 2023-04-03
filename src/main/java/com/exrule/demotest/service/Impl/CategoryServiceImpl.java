@@ -1,4 +1,40 @@
 package com.exrule.demotest.service.Impl;
 
-public class CategoryServiceImpl {
+import com.exrule.demotest.controller.dto.CategoryDto;
+import com.exrule.demotest.model.Category;
+import com.exrule.demotest.repository.CategoryRepository;
+import com.exrule.demotest.service.CategoryService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor
+public class CategoryServiceImpl implements CategoryService {
+    private final CategoryRepository categoryRepository;
+
+    @Override
+    public Category createCateegory(CategoryDto categoryDto) throws Exception {
+        Category category = new Category();
+        category.setName(categoryDto.getName());
+        return categoryRepository.save(category);
+    }
+
+    @Override
+    public Category updateCategory(Long id,CategoryDto categoryDto) throws Exception {
+        Category category = categoryRepository.findById(id).orElseThrow();
+        if(id != null){
+            category.setName(categoryDto.getName());
+        }
+        return categoryRepository.save(category);
+    }
+
+    @Override
+    public void deleteCategory(Long id) {
+        categoryRepository.deleteById(id);
+    }
+
+    @Override
+    public Category getById(Long id) throws Exception {
+        return categoryRepository.findById(id).orElseThrow();
+    }
 }

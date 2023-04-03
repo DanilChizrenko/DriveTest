@@ -9,4 +9,5 @@ public class ArticleDto {
     private String title;
     private String content;
     private String author;
+    private Long categoryId;
 }
