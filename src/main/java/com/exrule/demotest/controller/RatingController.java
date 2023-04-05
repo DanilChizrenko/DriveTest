@@ -26,7 +26,7 @@ public class RatingController {
     }
 
     @DeleteMapping("api/rating/delrate/{id}")
-    public ResponseEntity<?> delete(Long id) {
+    public ResponseEntity<?> delete(@PathVariable Long id) {
         ratingService.delete(id);
         return ResponseEntity.ok().body("Rating del");
     }

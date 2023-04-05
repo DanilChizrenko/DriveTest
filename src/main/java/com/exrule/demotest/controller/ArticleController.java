@@ -26,7 +26,7 @@ public class ArticleController {
     }
 
     @DeleteMapping("api/article/delete/{id}")
-    public ResponseEntity<?> deleteArticle(Long id){
+    public ResponseEntity<?> deleteArticle(@PathVariable Long id){
         articleService.delete(id);
         return ResponseEntity.ok().body("Article del");
     }
@@ -34,5 +34,25 @@ public class ArticleController {
     @GetMapping("api/article")
     public List<Article> getAllArticles() throws Exception{
         return articleService.getAllArticles();
+    }
+
+    @GetMapping("api/article/{id}")
+    public Article getArticleById(@PathVariable Long id) throws Exception{
+        return articleService.getArticleById(id);
+    }
+
+    @GetMapping("api/article/getarticle/{categoryId}")
+    public List<Article> getArticleForCategory(@PathVariable Long categoryId) throws Exception{
+        return articleService.getArticlesForCategory(categoryId);
+    }
+
+    @GetMapping("api/article/search/title")
+    public List<Article> getArticleByTitle(String keyword) throws Exception{
+        return articleService.findByTitleContaining(keyword);
+    }
+
+    @GetMapping("api/article/search/author")
+    public List<Article> getArticleByAuthor(String author) throws Exception{
+        return articleService.findByAuthor(author);
     }
 }

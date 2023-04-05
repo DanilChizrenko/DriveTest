@@ -24,7 +24,7 @@ public class CarController {
     }
 
     @DeleteMapping("api/carname/delete/{id}")
-    public ResponseEntity<?> deleteCarName(Long id){
+    public ResponseEntity<?> deleteCarName(@PathVariable Long id){
         carService.deleteCarName(id);
         return ResponseEntity.ok().body("Car del");
     }

@@ -44,7 +44,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public List<Article> getAllArticles() throws Exception {
-        return articleRepository.getAllArticles();
+        return articleRepository.findAll();
     }
 
     @Override
@@ -64,6 +64,6 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public List<Article> findByAuthor(String author) throws Exception {
-        return articleRepository.findByAuthor(author);
+        return articleRepository.findAllByAuthorContaining(author);
     }
 }
