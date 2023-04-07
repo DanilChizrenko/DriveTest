@@ -59,11 +59,11 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public List<Article> findByTitleContaining(String keyword) throws Exception {
-        return articleRepository.findByTitleContaining(keyword);
+        return articleRepository.findAllByTitleContainingIgnoreCase(keyword);
     }
 
     @Override
     public List<Article> findByAuthor(String author) throws Exception {
-        return articleRepository.findAllByAuthorContaining(author);
+        return articleRepository.findAllByAuthorContainingIgnoreCase(author);
     }
 }

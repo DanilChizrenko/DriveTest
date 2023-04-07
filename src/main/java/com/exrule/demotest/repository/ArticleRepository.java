@@ -8,6 +8,6 @@ import java.util.List;
 public interface ArticleRepository extends JpaRepository<Article, Long> {
     List<Article> findAll();
     List<Article> getArticlesByCategory_Id(Long categoryId);
-    List<Article> findByTitleContaining(String keyword);
-    List<Article> findAllByAuthorContaining(String author);
+    List<Article> findAllByTitleContainingIgnoreCase(String keyword);
+    List<Article> findAllByAuthorContainingIgnoreCase(String author);
 }

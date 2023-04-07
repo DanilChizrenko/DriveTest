@@ -47,12 +47,12 @@ public class ArticleController {
     }
 
     @GetMapping("api/article/search/title")
-    public List<Article> getArticleByTitle(String keyword) throws Exception{
+    public List<Article> getArticleByTitle(@RequestParam(required = false) String keyword) throws Exception{
         return articleService.findByTitleContaining(keyword);
     }
 
     @GetMapping("api/article/search/author")
-    public List<Article> getArticleByAuthor(String author) throws Exception{
+    public List<Article> getArticleByAuthor(@RequestParam(required = false) String author) throws Exception{
         return articleService.findByAuthor(author);
     }
 }
