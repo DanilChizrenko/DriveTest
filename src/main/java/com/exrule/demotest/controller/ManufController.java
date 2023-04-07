@@ -7,6 +7,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 public class ManufController {
@@ -27,6 +29,11 @@ public class ManufController {
     public ResponseEntity<?> delete(@PathVariable Long id) throws Exception {
          manufService.delete(id);
          return ResponseEntity.ok().body("Manufacturer del");
+    }
+
+    @GetMapping("api/manufacturer")
+    public List<Manufacturer> getAll() throws Exception{
+        return manufService.getAllManufacturer();
     }
 
     @GetMapping("api/manufacturer/{id}")

@@ -7,6 +7,8 @@ import com.exrule.demotest.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class CategoryServiceImpl implements CategoryService {
@@ -31,6 +33,11 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public void deleteCategory(Long id) {
         categoryRepository.deleteById(id);
+    }
+
+    @Override
+    public List<Category> getAllCategory() throws Exception {
+        return categoryRepository.findAll();
     }
 
     @Override

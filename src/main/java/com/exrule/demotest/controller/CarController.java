@@ -2,10 +2,13 @@ package com.exrule.demotest.controller;
 
 import com.exrule.demotest.controller.dto.CarDto;
 import com.exrule.demotest.model.Car;
+import com.exrule.demotest.model.Manufacturer;
 import com.exrule.demotest.service.CarService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -27,6 +30,11 @@ public class CarController {
     public ResponseEntity<?> deleteCarName(@PathVariable Long id){
         carService.deleteCarName(id);
         return ResponseEntity.ok().body("Car del");
+    }
+
+    @GetMapping("api/cars")
+    public List<Car> getAll() throws Exception{
+        return carService.getAllCar();
     }
 
     @GetMapping("/api/carname/{id}")

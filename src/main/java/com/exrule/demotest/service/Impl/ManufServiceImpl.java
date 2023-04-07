@@ -7,6 +7,8 @@ import com.exrule.demotest.service.ManufService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class ManufServiceImpl implements ManufService {
@@ -34,6 +36,11 @@ public class ManufServiceImpl implements ManufService {
         manufRepository.deleteById(id);
     }
 
+
+    @Override
+    public List<Manufacturer> getAllManufacturer() throws Exception {
+        return manufRepository.findAll();
+    }
 
     @Override
     public Manufacturer getById(Long id) {

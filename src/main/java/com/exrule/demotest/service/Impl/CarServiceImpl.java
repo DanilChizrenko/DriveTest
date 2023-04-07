@@ -8,6 +8,8 @@ import com.exrule.demotest.service.ManufService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class CarServiceImpl implements CarService {
@@ -37,6 +39,11 @@ public class CarServiceImpl implements CarService {
     @Override
     public void deleteCarName(Long id){
         carRepository.deleteById(id);
+    }
+
+    @Override
+    public List<Car> getAllCar() throws Exception {
+        return carRepository.findAll();
     }
 
     @Override

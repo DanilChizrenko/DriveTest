@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdc99274-30d1-41da-8ee2-a425a9621546" name="Changes" comment="add article and category (not done)">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2023_18_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2023_18_56__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2023_19_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2023_19_02__Changes_.xml" afterDir="false" />
+    <list default="true" id="bdc99274-30d1-41da-8ee2-a425a9621546" name="Changes" comment="article done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/ArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/repository/ArticleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/exrule/demotest/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exrule/demotest/controller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/exrule/demotest/repository/ArticleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exrule/demotest/repository/ArticleRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/exrule/demotest/service/Impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/exrule/demotest/service/Impl/ArticleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/ManufController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/controller/ManufController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/CarServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/ManufServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/Impl/ManufServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/ManufService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exrule/demotest/service/ManufService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +212,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add put and del method" />
     <MESSAGE value="add rating (fix)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add rating (fix)" />
+    <MESSAGE value="article done" />
+    <option name="LAST_COMMIT_MESSAGE" value="article done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
