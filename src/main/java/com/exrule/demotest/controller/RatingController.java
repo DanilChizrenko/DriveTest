@@ -31,6 +31,11 @@ public class RatingController {
         return ResponseEntity.ok().body("Rating del");
     }
 
+    @GetMapping("api/ratings")
+    public List<Rating> getAllRatings() throws Exception{
+        return ratingService.getAllRatings();
+    }
+
     @GetMapping("api/rating/getrating/{carId}")
     public List<Rating> getRatingsForEntity(@PathVariable Long carId) throws Exception {
         return ratingService.getRatingsForEntity(carId);

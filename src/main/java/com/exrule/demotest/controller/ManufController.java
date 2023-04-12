@@ -31,7 +31,7 @@ public class ManufController {
          return ResponseEntity.ok().body("Manufacturer del");
     }
 
-    @GetMapping("api/manufacturer")
+    @GetMapping("api/manufacturers")
     public List<Manufacturer> getAll() throws Exception{
         return manufService.getAllManufacturer();
     }

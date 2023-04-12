@@ -31,7 +31,7 @@ public class ArticleController {
         return ResponseEntity.ok().body("Article del");
     }
 
-    @GetMapping("api/article")
+    @GetMapping("api/articles")
     public List<Article> getAllArticles() throws Exception{
         return articleService.getAllArticles();
     }

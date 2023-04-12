@@ -32,7 +32,7 @@ public class CategoryController {
         return ResponseEntity.ok().body("Category del");
     }
 
-    @GetMapping("api/category")
+    @GetMapping("api/categories")
     public List<Category> getAll() throws Exception{
         return categoryService.getAllCategory();
     }

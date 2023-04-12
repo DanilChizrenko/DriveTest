@@ -31,6 +31,11 @@ public class RatingServiceImpl implements RatingService {
     }
 
     @Override
+    public List<Rating> getAllRatings() throws Exception {
+        return ratingRepository.findAll();
+    }
+
+    @Override
     public Double calculateAverageRating(Long carId) throws Exception {
         List<Rating> ratings = getRatingsForEntity(carId);
         if (ratings.isEmpty()){
