@@ -2,7 +2,6 @@ package com.exrule.demotest.controller;
 
 import com.exrule.demotest.controller.dto.CategoryDto;
 import com.exrule.demotest.model.Category;
-import com.exrule.demotest.model.Manufacturer;
 import com.exrule.demotest.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
