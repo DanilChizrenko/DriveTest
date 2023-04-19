@@ -7,7 +7,8 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.ZonedDateTime;
-import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -27,13 +28,11 @@ public class User {
     @JoinTable(
             name = "users_roles",
             joinColumns = @JoinColumn(
-                    name = "user_id", referencedColumnName = "id"
-            ),
+                    name = "user_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(
-                    name = "role_id", referencedColumnName = "id"
-            )
+                    name = "role_id", referencedColumnName = "id")
     )
-    private Collection<Role> roles;
+    private Set<Role> roles = new HashSet<>();
     @CreationTimestamp
     private ZonedDateTime createDate;
     @UpdateTimestamp
